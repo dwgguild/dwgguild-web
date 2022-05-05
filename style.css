@@ -284,18 +284,18 @@ header.active {
 .jumbotron__content--logo > .logo {
   width: auto;
   height: 6rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 @media (min-width: 641px) {
   .jumbotron__content--logo > .logo {
     height: 7rem;
-    padding-top: 5rem;
+    padding-top: 4rem;
   }
 }
 @media (min-width: 1025px) {
   .jumbotron__content--logo > .logo {
     height: 8rem;
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
 }
 
