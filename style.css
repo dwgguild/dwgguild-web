@@ -450,6 +450,14 @@ header.active {
   }
 }
 
+.about__graph {
+  padding-bottom: 12rem;
+  background: url(resources/about_graph.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .about__content--button {
   text-align: center;
   margin-top: 1.5rem;
