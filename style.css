@@ -451,7 +451,7 @@ header.active {
 }
 
 .about__graph {
-  padding-bottom: 12rem;
+  padding-bottom: 20rem;
   background: url(resources/about_graph.png);
   background-size: contain;
   background-position: center;
