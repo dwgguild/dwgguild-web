@@ -1,14 +1,13 @@
 /* body */
 * {
-  font-family: "Chakra Petch", "Spoqa Han Sans Neo", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
   background-color: #020d1a;
-  /* font-family: Spoqa Han Sans Neo; */
-  font-family: "Chakra Petch", "Spoqa Han Sans Neo", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   color: white;
   font-weight: 400;
 }
@@ -28,6 +27,7 @@ body {
 }
 
 .type__content {
+  /* font-family: "Bebas Neue"; */
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -192,69 +192,37 @@ header.active {
 
 /* jumbotron */
 #jumbotron {
-  height: 52rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 75vh;
   position: relative;
-  overflow-y: hidden;
+  margin-top: 4rem;
 }
-/* @media (min-width: 641px) {
+
+@media (min-width: 641px) {
   #jumbotron {
-    height: 52rem;
+    margin-top: 4.5rem;
   }
-} */
+}
+
 @media (min-width: 1025px) {
   #jumbotron {
-    height: 140vw;
+    margin-top: 5rem;
+    justify-content: end;
   }
 }
 
-#jumbotron__background {
+#jumbotron__video {
   position: absolute;
-  margin-top: -8rem;
-  z-index: -4;
-  width: 100%;
+  width: 100vw;
   height: 100%;
-  background: url(/resources/jumbotron_background.jpg);
-  background-position: center 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
 }
 
-#jumbotron__mountain {
-  position: absolute;
-  z-index: -3;
-  width: 100%;
-  height: 100%;
-  background: url(/resources/jumbotron_mountain.png);
-  /* background-position-y: 32.421875vw; */
-  background-position: center 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#jumbotron__ground {
-  position: absolute;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  background: url(/resources/jumbotron_ground.png);
-  /* background-position-y: 14.84375vw; */
-  background-position: center 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#jumbotron__character {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background: url(/resources/jumbotron_character.png);
-  /* background-position-y: 44.140625vw; */
-  background-position-x: center;
-  background-position-y: bottom;
-  /* background-position: center 0; */
-  background-repeat: no-repeat;
-  background-size: cover;
+/* title */
+#title {
+  background-color: #07182c;
 }
 
 .jumbotron__content {
@@ -262,17 +230,21 @@ header.active {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 1.5rem;
+  gap: 2rem;
   box-sizing: border-box;
 }
 @media (min-width: 641px) {
   .jumbotron__content {
     padding: 2rem;
+    gap: 2.5rem;
   }
 }
 @media (min-width: 1025px) {
   .jumbotron__content {
     padding: 4rem 3rem;
+    gap: 3rem;
     max-width: 74rem;
   }
 }
@@ -283,43 +255,42 @@ header.active {
 }
 .jumbotron__content--logo > .logo {
   width: auto;
-  height: 6rem;
-  padding-top: 3rem;
+  height: 3rem;
 }
 @media (min-width: 641px) {
   .jumbotron__content--logo > .logo {
-    height: 7rem;
-    padding-top: 4rem;
+    height: 4rem;
   }
 }
 @media (min-width: 1025px) {
   .jumbotron__content--logo > .logo {
-    height: 8rem;
-    padding-top: 5rem;
+    height: 5rem;
   }
 }
 
 .jumbotron__content--title {
-  text-align: center;
+  font-family: "Bebas Neue";
   font-weight: 700;
   color: white;
   line-height: 1.125;
-  font-size: 2rem;
+  text-align: center;
+  font-size: 3rem;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
 }
 @media (min-width: 641px) {
   .jumbotron__content--title {
-    font-size: 2.5rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    font-size: 3.5rem;
+    /* padding-top: 2rem;
+    padding-bottom: 1rem; */
   }
 }
 @media (min-width: 1025px) {
   .jumbotron__content--title {
-    font-size: 3rem;
-    padding-top: 3rem;
-    padding-bottom: 1.5rem;
+    font-size: 4rem;
+    /* padding-top: 3rem; */
+    /* text-align: left; */
+    /* padding-bottom: 1.5rem; */
   }
 }
 
@@ -334,16 +305,31 @@ header.active {
 }
 
 .jumbotron__content--sub {
+  font-family: "Bebas Neue";
   flex: none;
   width: 100%;
-  text-align: center;
   font-size: 1.25rem;
   line-height: 1.25;
+  text-align: center;
   color: white;
   padding-top: 0.25rem;
   animation-name: slideIn;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+}
+
+@media (min-width: 641px) {
+  .jumbotron__content--sub {
+    font-size: 1.5rem;
+    /* padding-top: 0.5rem; */
+  }
+}
+@media (min-width: 1025px) {
+  .jumbotron__content--sub {
+    font-size: 2rem;
+    /* text-align: left; */
+    /* padding-top: 0.75rem; */
+  }
 }
 
 @keyframes slideIn {
@@ -363,27 +349,9 @@ header.active {
     transform: translateX(-200%);
   }
 }
-
-@media (min-width: 641px) {
-  .jumbotron__content--sub {
-    font-size: 1.5rem;
-    padding-top: 0.5rem;
-  }
-}
-@media (min-width: 1025px) {
-  .jumbotron__content--sub {
-    font-size: 2rem;
-    padding-top: 0.75rem;
-  }
-}
-
 .jumbotron__content--button {
   text-align: center;
   margin-top: 1.5rem;
-}
-
-#test {
-  height: 400vh;
 }
 
 /* about */
@@ -409,8 +377,6 @@ header.active {
 
 @media (min-width: 1025px) {
   .about__wrapper {
-    flex-direction: row;
-    align-items: center;
     padding: 6rem 3rem 0 3rem;
     max-width: 74rem;
   }
@@ -419,8 +385,7 @@ header.active {
 .about__video {
   flex: none;
   width: 100%;
-  height: 24rem;
-  background: url(resources/about_video.jpg);
+  padding-bottom: calc(100% / 16 * 9);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -428,12 +393,17 @@ header.active {
   box-sizing: border-box;
   box-shadow: inset 0px 0px 32px rgba(0, 75, 125, 0.5);
   border-radius: 32px;
+  position: relative;
 }
 
-@media (min-width: 1025px) {
-  .about__video {
-    flex: 1 1 0%;
-  }
+.about__video > iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  border-radius: 32px;
 }
 
 .about__content {
@@ -444,15 +414,25 @@ header.active {
   text-align: center;
 }
 
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
   .about__content {
     text-align: left;
   }
-}
+} */
 
 .about__graph {
-  padding-bottom: 20rem;
+  width: 100%;
+  padding-bottom: calc(100% / 4 * 3);
   background: url(resources/about_graph.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about__vision {
+  width: 100%;
+  padding-bottom: calc(100% / 4 * 3);
+  background: url(resources/about_vision.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -482,6 +462,27 @@ header.active {
   .about__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+.about__grid--item {
+  width: 100%;
+  border: 1px solid #004488;
+  background-color: #020d1a;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 32px rgba(0, 75, 125, 0.5);
+  border-radius: 32px;
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about__grid--title {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: left;
 }
 
 /* partners */
@@ -668,8 +669,8 @@ header.active {
 
 /* footer */
 footer {
-  background-color: #07182c;
-  background-image: url(resources/footer_background.jpg);
+  /* background-color: #07182c; */
+  /* background-image: url(resources/footer_background.jpg); */
   background-repeat: no-repeat;
   background-size: auto;
   background-position-x: center;
