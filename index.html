@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DWG Guild (DWG G)</title>
   <meta name="description" content="Main bridge to blockchain gaming & entertainment" />
-
   <meta name="keywords" content="DWG Guild (DWG G)" />
   <meta itemprop="name" content="DWG Guild (DWG G)" />
   <meta itemprop="url" content="https://dwgguild.gg" />
@@ -22,7 +22,6 @@
   <meta name="twitter:description" content="Main bridge to blockchain gaming & entertainment" />
   <meta name="twitter:url" content="https://dwgguild.gg" />
   <meta name="twitter:image" content="https://dwgguild.gg/og.jpg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png" />
@@ -181,7 +180,8 @@
         </div>
       </div>
       <div class="about__video">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TAoy-GN_Hfc" frameborder="0"
+        <iframe class="about_youtube" width="100%" height="100%" src="https://www.youtube.com/embed/TAoy-GN_Hfc?rel=0"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
@@ -280,11 +280,7 @@
     </div>
   </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 <script src="scrollspy.js"></script>
-<script>
-  var parallax = new Rellax(".parallax");
-</script>
 <script>
   window.onload = function () {
     scrollSpy("#main-menu", {
@@ -299,27 +295,5 @@
     });
   };
 </script>
-<script>
-  function hide_related() {
-    $("#frame-container").find(".ytp-pause-overlay ytp-scroll-min")
-      .css("display", "none");
-  }
-</script>
-<!-- <script>
-    let scrollPosY = window.scrollY;
-    const header = document.querySelector("header");
-    const header_add_class = () => header.classList.add("active");
-    const header_remove_class = () => header.classList.remove("active");
-
-    window.addEventListener("scroll", function () {
-      scrollPosY = window.scrollY;
-
-      if (scrollPosY >= 500) {
-        header_add_class();
-      } else {
-        header_remove_class();
-      }
-    });
-  </script> -->
 
 </html>
