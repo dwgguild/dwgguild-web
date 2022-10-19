@@ -20,12 +20,6 @@ body {
   color: #73fbee;
 }
 
-.type__header {
-  font-weight: bold;
-  font-size: 1.75rem;
-  line-height: 1.5;
-}
-
 .type__content {
   /* font-family: "Bebas Neue"; */
   font-weight: 300;
@@ -438,6 +432,39 @@ header.active {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 641px) {
+  .about__graph {
+    width: 16rem;
+    height: 16rem;
+    padding-bottom: 0;
+  }
+
+  .about__vision {
+    width: 16rem;
+    height: 16rem;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .about__graph {
+    width: 24rem;
+    height: 24rem;
+    padding-bottom: 0;
+  }
+
+  .about__vision {
+    width: 24rem;
+    height: 24rem;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .about__wrapper {
+    padding: 6rem 3rem 0 3rem;
+    max-width: 74rem;
+  }
+}
 .about__content--button {
   text-align: center;
   margin-top: 1.5rem;
@@ -458,11 +485,11 @@ header.active {
   line-height: 1.5;
 }
 
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
   .about__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
+} */
 
 .about__grid--item {
   width: 100%;
@@ -476,13 +503,44 @@ header.active {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  text-align: left;
+}
+
+@media (min-width: 641px) {
+  .about__grid--item {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 1025px) {
+  .about__grid--item {
+    padding: 3rem;
+  }
+}
+
+.about__grid--content {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
 }
 
 .about__grid--title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 700;
-  text-align: left;
+  padding: 1rem 0;
+}
+
+.about__grid--sub {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-top: 1rem;
+}
+
+.about__grid--text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding-left: 0.5rem;
 }
 
 /* partners */
@@ -540,18 +598,19 @@ header.active {
   margin-top: 3rem;
   gap: 3rem;
 }
-
+/* 
 @media (min-width: 641px) {
   .partners__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
+} */
 
 #dwg.partners__grid--item {
+  height: 40rem;
   background: url(resources/partners_dwg.jpg);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 #coming.partners__grid--item {
@@ -586,6 +645,18 @@ header.active {
 .partners__grid--content {
   font-size: 0.875rem;
   line-height: 1.5;
+}
+
+.partners__grid--sub {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-top: 1rem;
+}
+
+.partners__grid--text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding-left: 0.5rem;
 }
 
 @media (min-width: 641px) {
