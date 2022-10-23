@@ -426,7 +426,7 @@ header.active {
 .about__vision {
   width: 100%;
   padding-bottom: calc(100%);
-  background: url(resources/about_vision.png);
+  background: url(resources/about_vision-m.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -440,9 +440,14 @@ header.active {
   }
 
   .about__vision {
-    width: 16rem;
-    height: 16rem;
-    padding-bottom: 0;
+    /* width: 16rem;
+    height: 16rem; */
+    background: url(resources/about_vision.png);
+    background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+    padding-bottom: calc(24.6%);
+    /* padding-bottom: 0; */
   }
 }
 @media (min-width: 1025px) {
@@ -451,12 +456,12 @@ header.active {
     height: 24rem;
     padding-bottom: 0;
   }
-
+/* 
   .about__vision {
     width: 24rem;
     height: 24rem;
     padding-bottom: 0;
-  }
+  } */
 }
 
 @media (min-width: 1025px) {
@@ -518,6 +523,10 @@ header.active {
   }
 }
 
+.about__grid--item.non {
+  flex-direction: column;
+}
+
 .about__grid--content {
   flex: 1 1 0%;
   display: flex;
@@ -532,9 +541,17 @@ header.active {
 }
 
 .about__grid--sub {
+  font-weight: 700;
   font-size: 1rem;
   line-height: 1.5;
   padding-top: 1rem;
+}
+
+@media (min-width: 641px) {
+  .about__grid--sub {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .about__grid--text {
