@@ -302,7 +302,7 @@ header.active {
   font-family: "Bebas Neue";
   flex: none;
   width: 100%;
-  font-size: 1.25rem;
+  font-size: 3.5vw;
   line-height: 1.25;
   text-align: center;
   color: white;
@@ -549,7 +549,7 @@ header.active {
 
 @media (min-width: 641px) {
   .about__grid--sub {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     margin-bottom: 0.5rem;
   }
 }
