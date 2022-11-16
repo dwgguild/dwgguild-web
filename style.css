@@ -515,12 +515,9 @@ header.active {
 }
 
 .about__vision {
-  width: 100%;
-  padding-bottom: calc(100%);
-  background: url(resources/about_vision-m.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 480px;
+  height: 480px;
+  perspective: 256px;
 }
 
 .about__vision--round {
@@ -529,8 +526,9 @@ header.active {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 256px;
-  height: 256px;
+  width: 480px;
+  height: 480px;
+  transform: rotateX(45deg);
 }
 
 @media (min-width: 641px) {
@@ -587,6 +585,7 @@ header.active {
   position: absolute;
   /* background-color: #73fbee; */
   border-radius: 9999px;
+  transform: rotateX(0deg);
 }
 
 .about__vision--planet.color1 {
@@ -703,16 +702,16 @@ header.active {
     padding-bottom: 0;
   }
 
-  .about__vision {
+  /* .about__vision { */
     /* width: 16rem;
     height: 16rem; */
-    background: url(resources/about_vision.png);
+    /* background: url(resources/about_vision.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: calc(24.6%);
+    padding-bottom: calc(24.6%); */
     /* padding-bottom: 0; */
-  }
+  /* } */
 }
 @media (min-width: 1025px) {
   .about__graph {
@@ -933,7 +932,7 @@ header.active {
 }
 
 .about__grid--text {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 /* 
