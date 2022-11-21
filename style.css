@@ -515,9 +515,35 @@ header.active {
 }
 
 .about__vision {
-  width: 480px;
-  height: 480px;
-  perspective: 256px;
+  width: 720px;
+  height: 258px;
+  position: relative;
+  /* perspective: 256px; */
+}
+
+.about__vision--bg { 
+  z-index: 1;
+}
+
+.about__vision--dot { 
+  position: absolute;
+	top: 0;
+	left: 3rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 9999px;
+  background-color: #73FBEE;
+	offset-path: path("M310.895 129L220.129 38.4909C173.879 -7.62784 100.249 -11.6943 49.1751 29.0495C-15.0584 80.2907 -15.0584 177.709 49.1751 228.95C100.249 269.694 173.879 265.628 220.129 219.509L310.895 129ZM310.895 129L401.661 219.509C447.911 265.628 521.54 269.694 572.614 228.95C636.848 177.709 636.848 80.2907 572.614 29.0495C521.54 -11.6943 447.911 -7.62784 401.661 38.4909L310.895 129Z");
+  animation: move 20s infinite linear;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
 }
 
 .about__vision--round {
