@@ -905,8 +905,8 @@ header.active {
 
 .business_text {
     position: absolute;
-    top: 120px;
-    left: 120px;
+    top: 6vw;
+    left: 6vw;
 }
 
 .business_text_title {
@@ -944,7 +944,7 @@ header.active {
 }
 
 .vision__content .about__vision {
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 
 .about__section--block {
@@ -1045,11 +1045,25 @@ header.active {
     /* text-align: left; */
 }
 
-@media (min-width: 641px) {
+@media only screen and (max-width: 1280px) and (min-width: 641px) {
     /* .about__grid--item {
       flex-direction: row;
       align-items: center;
     } */
+
+    .business_text_title {
+        font-size: 28px;
+    }
+
+    .business_text_subtitle {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .business_text_desc {
+        font-size: 16px;
+        margin-top: 10px;
+    }
 }
 
 @media (min-width: 1025px) {
