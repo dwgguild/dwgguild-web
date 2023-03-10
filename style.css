@@ -933,10 +933,14 @@ header.active {
     font-size: 25px;
     margin-top: 80px;
 }
+.business_text_subContent {
+    font-size: 18px;
+    margin-top: 6px;
+}
 
 .business_text_desc {
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 18px;
+    margin-top: 24px;
 }
 
 .about__section {
@@ -1043,6 +1047,42 @@ header.active {
 
 }
 
+@media only screen and (max-width: 640px) and (min-width: 360px) {
+    .business_text_title {
+        font-size: 14px;
+    }
+
+    .business_text_subtitle {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .business_text_subContent {
+        font-size: 6px;
+        margin-top: 6px;
+    }
+
+    .business_text_desc {
+        font-size: 6px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 641px) {
+    .business_text_title {
+        font-size: 28px;
+    }
+
+    .business_text_subtitle {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .business_text_desc {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
 /* @media (min-width: 1025px) {
   .about__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1164,7 +1204,8 @@ header.active {
 }
 
 .about__grid--text {
-    width: 48rem;
+    width: 100%;
+    text-align: center;
     font-size: 1rem;
     line-height: 1.5;
     margin-top: 100px;
