@@ -969,6 +969,7 @@ header.active {
     background-size: cover;
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-content: center;
 }
 
