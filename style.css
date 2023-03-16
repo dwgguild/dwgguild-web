@@ -965,7 +965,7 @@ header.active {
     background-position: center;
     background-size: cover;
     display: grid;
-    justify-content: center;
+    justify-items: center;
     align-content: center;
 }
 
