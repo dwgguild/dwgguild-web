@@ -193,6 +193,7 @@ header.active {
     width: 8.5rem;
     height: 2.5rem;
     font-size: 0.75rem;
+    cursor: pointer;
 }
 
 /* jumbotron */
@@ -373,6 +374,9 @@ header.active {
 .jumbotron__content--button {
     text-align: center;
     margin-top: 1.5rem;
+}
+.jumbotron__content--button button {
+  cursor: pointer;
 }
 
 /* about */
