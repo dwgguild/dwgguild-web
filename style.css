@@ -375,6 +375,11 @@ header.active {
     text-align: center;
     margin-top: 1.5rem;
 }
+@media (max-width: 641px) {
+    .jumbotron__content--button button {
+        transform: scale(0.8);
+    }
+}
 .jumbotron__content--button button {
   cursor: pointer;
 }
@@ -1521,9 +1526,13 @@ footer {
 }
 
 .footer__content--logo {
-    position: absolute;
     width: 18rem;
     padding: 0 2rem;
+}
+@media (min-width: 641px) {
+  .footer__content--logo {
+    position: absolute;
+  }
 }
 
 .footer__content {
